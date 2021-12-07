@@ -1,0 +1,114 @@
+.footer {
+  background-color: #2f303a;
+}
+.footer .container {
+  display: flex;
+}
+.footer .logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+.address-footer {
+  padding-left: 0;
+  padding-bottom: 60px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address-place {
+  color: var(--primary-white-color);
+}
+.address-mail,
+.address-tel {
+  color: var(--secondary-text-color);
+}
+.join {
+  margin-left: 70px;
+}
+.join-title {
+  margin-top: 72px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.join-sociallinks {
+  padding: 0;
+}
+
+.join-sociallinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 250ms var(--time-function);
+}
+.join-sociallinks a:hover,
+.join-sociallinks a:focus {
+  background-color: var(--accent-color);
+}
+.join-sociallinks .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.signup {
+  margin-top: 72px;
+  margin-left: 93px;
+  margin-bottom: 94px;
+}
+.signup label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.signup input {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+.signup button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  color: var(--primary-white-color);
+}
+.signup svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.signup > div {
+  display: flex;
+}
