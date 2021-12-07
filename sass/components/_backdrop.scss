@@ -7,7 +7,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--time-function);
+  transition: opacity 250ms $time-function;
 }
 .modal {
   position: absolute;
@@ -15,10 +15,10 @@
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
-  transition: transform 250ms var(--time-function);
+  transition: transform 250ms $time-function;
   min-width: 530px;
   min-height: 580px;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -36,22 +36,23 @@
   border-radius: 50%;
   cursor: pointer;
   border: 1px solid #0000001a;
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
   color: #000000;
-  transition: color 250ms var(--time-function);
+  transition: color 250ms $time-function;
+  &:hover {
+    color: $accent-color;
+  }
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
 }
-.close:hover {
-  color: var(--accent-color);
-}
-.close-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
+
 .backdrop-title {
   margin-top: 40px;
   margin-left: 40px;
@@ -61,7 +62,7 @@
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .modal-signup {
   width: 450px;
@@ -89,7 +90,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border-color 250ms var(--time-function);
+  transition: border-color 250ms $time-function;
 }
 .modal-signup textarea {
   width: 100%;
@@ -107,15 +108,15 @@
   height: 18px;
   top: 50%;
   left: 12px;
-  transition: fill 250ms var(--time-function);
+  transition: fill 250ms $time-function;
 }
 .form-label:focus-within .form-input,
 .form-label:focus-within textarea {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .form-label:focus-within .icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .form-checkbox {
   font-size: 14px;
@@ -124,7 +125,7 @@
   color: #757575;
 }
 .form-checkbox a {
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 }
 .checkbox {
@@ -150,10 +151,10 @@
 .form-checkbox .icon {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primary-text-color);
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
   margin-right: 7px;
-  transition: background-color 250ms var(--time-function);
+  transition: background-color 250ms $time-function;
 }
 .icon-checked {
   position: absolute;
@@ -164,7 +165,7 @@
   height: 15px;
 }
 .checkbox:checked + .icon {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
 }
 .checkbox:checked ~ .icon-checked {
@@ -173,11 +174,11 @@
 .form-button {
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;

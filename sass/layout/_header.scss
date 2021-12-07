@@ -17,7 +17,7 @@
   font-size: 26px;
   line-height: 1.2;
   &__accent {
-    color: var(--accent-color);
+    color: &accent-color;
   }
 }
 .navigation {
@@ -59,8 +59,8 @@
 .address-header {
   display: flex;
   margin-left: auto;
-  &__item + &__item {
-    margin-left: 50px;
+  &__item:not(:last-child) {
+    margin-right: 50px;
   }
   &__link {
     display: flex;
