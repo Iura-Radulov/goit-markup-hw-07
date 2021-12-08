@@ -41,7 +41,18 @@
 .join-sociallinks {
   padding: 0;
 }
-
+.join-sociallinks {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100%;
+  height: 45px;
+}
+.join-sociallinks .link:not(last-child) {
+  margin-right: 10px;
+}
 .join-sociallinks a {
   display: flex;
   align-items: center;

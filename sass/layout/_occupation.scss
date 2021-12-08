@@ -1,5 +1,4 @@
-.occupation-title,
-.team-title {
+.occupation-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -10,28 +9,28 @@
   display: flex;
   padding-left: 0;
   padding-bottom: 94px;
-}
-.occupation-exemple .item:not(last-child) {
-  margin-right: 30px;
-}
-.occupation-exemple .item {
-  position: relative;
-}
-.occupation-exemple img {
-  display: block;
-}
-.occupation-text {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--primary-white-color);
+  &__item {
+    position: relative;
+  }
+  &__item:not(last-child) {
+    margin-right: 30px;
+  }
+  &__icon {
+    display: block;
+  }
+  &__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $primary-white-color;
+  }
 }
